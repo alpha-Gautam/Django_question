@@ -12,7 +12,7 @@
 
 
 from django.db import connection, transaction
-# from myapp.models import Item
+from .models import Item
 
 def prove_autocommit():
     Item.objects.all().delete()
